@@ -54,19 +54,6 @@ public class DatabaseManager {
             )
         """);
 
-
-            stmt.execute("""
-            CREATE TABLE IF NOT EXISTS History (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                user_id INTEGER NOT NULL,
-                file_id INTEGER NOT NULL,
-                action TEXT,
-                timestamp TEXT DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY(user_id) REFERENCES Users(id),
-                FOREIGN KEY(file_id) REFERENCES Files(id)
-            )
-        """);
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -401,4 +388,5 @@ public class DatabaseManager {
     }
 
 }
+
 
