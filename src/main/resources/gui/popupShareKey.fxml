@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="242.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PopupShareKeyController">
+   <children>
+      <Label fx:id="showShareKeyLabel" layoutX="106.0" layoutY="75.0" prefHeight="53.0" prefWidth="317.0" text="Label">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
